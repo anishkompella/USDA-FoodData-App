@@ -1,16 +1,49 @@
 # frontend
 
-A new Flutter project.
+Features
+Search Screen
 
-## Getting Started
+Text input for food names
 
-This project is a starting point for a Flutter application.
+Tap an item to view its nutrients
 
-A few resources to get you started if this is your first Flutter project:
+Displays key nutrients in a table form
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Forward/back navigation between search and detail screens
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Running the App 
+0. Environment Setup: Be sure you have the following installed on your local machine
+Visual Studio Code
+Python 3
+Git
+
+1. Install Neccessary Libraries/Dependencies: These will be specified in requirements.txt file
+
+2. Git Clone: Clone this repository into your local maching using this command:
+[text](https://github.com/anishkompella/USDA-FoodData-App.git)
+
+3. Terminal Setup: Start a new terminal and run:
+[text](uvicorn main:app --reload)
+
+4. Flutter: cd into the frontend directory and this command:
+[text](flutter run)
+
+5. Try a simulator: If you are on Mac, you can explore the app on an IOS simulator, otherwise try a browser
+IOS
+[text](flutter run -d ios)
+Web 
+[text](flutter run -d chrome)
+
+
+API Integration
+HTTP client defined in lib/services/api.dart
+
+Two main calls:
+
+searchFoods(query, pageSize, pageNumber) → returns SearchResponse
+
+fetchFoodDetail(fdcId) → returns FoodDetail
+
+Parses JSON into PODOs in lib/models/
+
