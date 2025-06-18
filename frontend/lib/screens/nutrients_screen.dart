@@ -15,11 +15,11 @@ class NutrientsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext ctx) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Nutrients')),
+      appBar: AppBar(title: const Text('Check these Facts Out!')),
       body: FutureBuilder<FoodDetail>(
-        future: Api().fetchFoodDetail(fdcId),
+        future: Api().fetchFoodDetail(fdcId),  //asynchronous call is made as soon as widget is built
         builder: (c, snap) {
-          if (snap.connectionState != ConnectionState.done) {
+          if (snap.connectionState != ConnectionState.done) {        //error handling is done here
             return const Center(child: CircularProgressIndicator());
           }
           if (snap.hasError) {
@@ -37,7 +37,7 @@ class NutrientsScreen extends StatelessWidget {
                 Text(title, style: Theme.of(ctx).textTheme.titleLarge),
                 const SizedBox(height: 16),
                 Expanded(
-                  child: SingleChildScrollView(
+                  child: SingleChildScrollView(  //makes the table srollable 
                     child: DataTable(
                       columns: const [
                         DataColumn(label: Text('Nutrient')),

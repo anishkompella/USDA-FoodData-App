@@ -11,7 +11,7 @@ class DetailProvider extends ChangeNotifier {
   Future<void> fetch(int fdcId) async {
     isLoading = true; error = null; notifyListeners();
     try {
-      detail = await _api.fetchFoodDetail(fdcId);
+      detail = await _api.fetchFoodDetail(fdcId); // Makes the api call and then converts data to Food Detail objects
     } catch (e) {
       error = e.toString();
     } finally {
