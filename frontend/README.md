@@ -15,13 +15,13 @@ Git
 1. Install Neccessary Libraries/Dependencies: These will be specified in requirements.txt file
 
 2. Git Clone: Clone this repository into your local maching using this command:
-[text](https://github.com/anishkompella/USDA-FoodData-App.git)
+https://github.com/anishkompella/USDA-FoodData-App.git
 
 3. Terminal Setup: Start a new terminal and run:
-[text](uvicorn main:app --reload)
+uvicorn main:app --reload
 
 4. Flutter: cd into the frontend directory and this command:
-[text](flutter run)
+flutter run
 
 5. Try a simulator: If you are on Mac, you can explore the app on an IOS simulator, otherwise try a browser
 IOS
