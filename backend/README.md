@@ -1,8 +1,8 @@
-Backend Documentation
+# Backend Documentation
 
 
 
-Running the App 
+## Running the App 
 0. Environment Setup: Be sure you have the following installed on your local machine
 Visual Studio Code
 Python 3
@@ -22,7 +22,7 @@ Git
 5. Try a simulator: If you are on Mac, you can explore the app on an IOS simulator, otherwise try a browser
 
 
-Endpoints
+## Endpoints
 
 This application makes use of 2 endpoints:
 
@@ -113,7 +113,7 @@ Successful Response(200 OK)
 }
 )
 
-Error Handling:
+## Error Handling:
 
 Validation Errors (400): Automatically returned by FastAPI when query or path parameters fail type/constraint checks. Response body follows the standard FastAPI error schema with a list of issues under detail.
 
