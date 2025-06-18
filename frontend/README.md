@@ -1,18 +1,12 @@
-# frontend
-
-Features
+# Features
 Search Screen
-
 Text input for food names
-
 Tap an item to view its nutrients
-
 Displays key nutrients in a table form
-
 Forward/back navigation between search and detail screens
 
 
-Running the App 
+# Running the App 
 0. Environment Setup: Be sure you have the following installed on your local machine
 Visual Studio Code
 Python 3
@@ -31,12 +25,12 @@ Git
 
 5. Try a simulator: If you are on Mac, you can explore the app on an IOS simulator, otherwise try a browser
 IOS
-[text](flutter run -d ios)
+flutter run -d ios
 Web 
-[text](flutter run -d chrome)
+flutter run -d chrome
 
 
-API Integration
+# API Integration
 HTTP client defined in lib/services/api.dart
 
 Two main calls:
